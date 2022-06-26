@@ -1,0 +1,195 @@
+:root {
+    --secondary-color: #0f9404;
+    --secondary-color-alpha: rgba(15, 148, 4, 0.25);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+}
+
+.btn__stock {
+    height: 100%;
+    background-color: white;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.btn__stock-search {
+    width: 3.5em;
+}
+
+.btn__stock-search:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    box-shadow: 0 0 0 0.2rem var(--secondary-color-alpha);
+}
+
+.div__search-box {
+    position: relative;
+    right: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0 auto;
+    height: 3.5em;
+}
+
+.form-control:focus {
+    color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem var(--secondary-color-alpha);
+}
+
+.input__stock-search {
+    height: 100%;
+    width: 20em;
+    background-color: #f6f6f6;
+}
+
+.logo {
+    width: 137px;
+    height: 45px;
+    opacity: 1;
+}
+
+.logo:hover {
+    opacity: 0.7;
+}
+
+.navbar__top {
+    width: 100%;
+    border-bottom: solid 3px var(--secondary-color);
+}
+
+.div__card-stock {
+    margin: 20px;
+}
+
+.div__card-stock:hover {
+    transform: translateY(-0.3em);
+    transition: all 0.3s ease-in-out;
+}
+
+.stock-list {
+    position: relative;
+    top: 2em;
+    overflow-y: hidden;
+}
+
+.spinner-border {
+    color: var(--secondary-color) !important;
+    margin-top: 100px;
+    width: 5rem;
+    height: 5rem;
+}
+
+.spinner-company {
+    position: relative;
+    left: 50%;
+}
+
+a,
+a:hover {
+    color: inherit; /* remove blue link color */
+    text-decoration: none; /* remove underline */
+}
+
+#canvasGraph {
+    width: 100%;
+    height: 100%;
+}
+
+.card-link {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px;
+}
+
+.div__searchResultsCompanyChanges {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 22px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.div__searchResultsCompanyChanges > .fa-caret-up,
+.div__searchResultsCompanyChanges > .fa-caret-down {
+    padding-top: 4px;
+}
+
+.div__search-company-price {
+    font-weight: 600;
+}
+
+.div__search-company-percentage-change--up {
+    color: green;
+    font-size: 22px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.div__search-company-percentage-change--down {
+    color: red;
+    font-size: 22px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.div__search-company-percentage-change--no-profile {
+    font-size: 18px;
+    margin: 0 auto;
+    vertical-align: middle;
+    color: gray;
+}
+
+.div__profile-company-percentage-change {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.fa-caret-up {
+    color: limegreen;
+}
+
+.fa-caret-down {
+    color: red;
+}
+
+.card-img-top {
+    height: "100px";
+    object-fit: "cover";
+    object-position: "center";
+    border-radius: "0";
+    border: "1px solid #ddd";
+    border-bottom: "none";
+    border-top-left-radius: "10px";
+    border-top-right-radius: "10px";
+    border-bottom-left-radius: "10px";
+    border-bottom-right-radius: "10px";
+    box-shadow: "0px 0px 10px #ddd";
+    margin-bottom: "10px";
+    margin-top: "10px";
+}
+
+mark {
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: 800;
+}
